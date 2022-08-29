@@ -33,6 +33,7 @@ function Board() {
         setLoading(false);
       }
     }
+    fetchData();
   }, [error]);
 
   return (
@@ -43,7 +44,7 @@ function Board() {
           title={lane.title}
           loading={loading}
           error={error}
-          tasks={tasks.filter((task) => task.lane === lane.id)}
+          tasks={tasks.filter(task => task.lane === lane.id)}
         />
       ))}
     </div>
