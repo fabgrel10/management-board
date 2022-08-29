@@ -1,8 +1,8 @@
 {
-  "name": "starter-vite-react",
+  "name": "management-board",
   "private": true,
   "version": "1.0.0",
-  "description": "Opinionated Vite starter template with ESLint, Prettier, Stylelint and more.",
+  "description": "Dynamic project management board with React and styled-components.",
   "repository": {
     "type": "git",
     "url": "https://github.com/fabgrel10/vite-react-starter"
@@ -70,7 +70,6 @@
     "stylelint-scss": "^4.3.0",
     "typescript": "^4.8.2",
     "vite": "^3.0.9",
-    "vite-plugin-svgr": "^2.2.1",
     "webpack": "^5.74.0"
   }
 }
