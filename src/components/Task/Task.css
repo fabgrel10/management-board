@@ -1,0 +1,11 @@
+.task-wrapper {
+  padding: 20px;
+  margin: 0% 5% 5%;
+  background: darkGray;
+  border-radius: 20px;
+}
+
+.task-wrapper h3 {
+  width: 100%;
+  margin: 0;
+}
