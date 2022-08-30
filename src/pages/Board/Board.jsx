@@ -16,26 +16,49 @@ function onDragStart(ev, taskId) {
   ev.dataTransfer.setData('taskId', taskId);
 }
 
+function onDragOver(ev) {
+  ev.preventDefault();
+}
+
 function Board() {
-  const [tasks, setTasks] = useState([]);
   const [loading, error, data] = useDataFetching(
     `https://my-json-server.typicode.com/PacktPublishing/React-Projects-Second-Edition/tasks`
   );
 
+  const [tasks, setTasks] = useState([]);
+
   useEffect(() => {
     setTasks(data);
   }, [data]);
+
+  function onDrop(ev, laneId) {
+    const taskId = ev.dataTransfer.getData('taskId');
+    console.log(taskId, laneId);
+
+    // Update the task's lane
+    const updatedTasks = tasks.filter(task => {
+      if (task.id.toString() === taskId) {
+        task.lane = laneId;
+      }
+      return task;
+    });
+
+    setTasks(updatedTasks);
+  }
 
   return (
     <div className="Board-wrapper">
       {lanes.map(lane => (
         <Lane
           key={lane.id}
+          laneId={lane.id}
           title={lane.title}
           loading={loading}
           error={error}
           tasks={tasks.filter(task => task.lane === lane.id)}
           onDragStart={onDragStart}
+          onDragOver={onDragOver}
+          onDrop={onDrop}
         />
       ))}
     </div>
