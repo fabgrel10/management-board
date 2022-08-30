@@ -5,7 +5,7 @@ import './Landing.css';
 const Landing = () => (
   <div className="container">
     <Link to="/Board">
-      <span>Invoices</span>
+      <span>Board</span>
     </Link>
     <span> | </span>
     <Link to="/Backlog">
