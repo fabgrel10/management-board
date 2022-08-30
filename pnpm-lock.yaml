@@ -29,7 +29,6 @@ specifiers:
   postcss-scss: ^4.0.4
   postcss-syntax: ^0.36.2
   prettier: ^2.7.1
-  prettier-plugin-style-order: ^0.2.2
   prettier-plugin-tailwindcss: ^0.1.13
   prop-types: ^15.8.1
   react: ^18.2.0
@@ -84,7 +83,6 @@ devDependencies:
   postcss-scss: 4.0.4_postcss@8.4.16
   postcss-syntax: 0.36.2_d2wc45s7fyxd3k33aenbkzglsu
   prettier: 2.7.1
-  prettier-plugin-style-order: 0.2.2_prettier@2.7.1
   prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
   react-test-renderer: 18.2.0_react@18.2.0
   stylelint: 14.11.0
@@ -4419,16 +4417,6 @@ packages:
   /prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
-    dev: true
-
-  /prettier-plugin-style-order/0.2.2_prettier@2.7.1:
-    resolution: {integrity: sha512-4rASdHONhHLNX0arKqEvjGOEAbkSZE3+GQPSaS8mf3en/spjeN0le5fV1yKltWwQeM4UPn7CkKzeD97a4Az/6w==}
-    peerDependencies:
-      prettier: '>= 1.13'
-    dependencies:
-      postcss-sorting: 5.0.1
-      prettier: 2.7.1
-      resolve-cwd: 3.0.0
     dev: true
 
   /prettier-plugin-tailwindcss/0.1.13_prettier@2.7.1:
