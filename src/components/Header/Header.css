@@ -1,15 +1,15 @@
-.Header-wrapper {
-  background-color: blue;
-  height: 100%;
+.header-wrapper {
   display: flex;
+  height: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: blue;
   color: white;
+  font-size: calc(10px + 2vmin);
 }
 
-.Header-wrapper h1 {
-  height: 64px;
+.header-wrapper h1 {
+  height: 90px;
   pointer-events: none;
 }

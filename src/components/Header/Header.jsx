@@ -2,7 +2,7 @@ import './Header.css';
 
 function Header() {
   return (
-    <div className="Header-wrapper">
+    <div className="header-wrapper">
       <h1>Project Management Board</h1>
     </div>
   );

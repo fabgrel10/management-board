@@ -10,7 +10,6 @@ function Backlog() {
 
   return (
     <div className="backlog-wrapper">
-      <h2>Backlog</h2>
       <div className="tasks-wrapper">
         {loading || error ? (
           <span>{error || 'Loading...'}</span>
