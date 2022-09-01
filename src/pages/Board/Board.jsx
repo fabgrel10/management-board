@@ -33,7 +33,6 @@ function Board() {
 
   function onDrop(ev, laneId) {
     const taskId = ev.dataTransfer.getData('taskId');
-    console.log(taskId, laneId);
 
     // Update the task's lane
     const updatedTasks = tasks.filter(task => {
