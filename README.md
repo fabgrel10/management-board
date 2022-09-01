@@ -5,11 +5,11 @@
 
 > Dynamic project management board with React and styled-components.
 
-![screenshot](./src/assets/images/app_screenshot.png)
+![screenshot](./src/assets/images/app_screenshot.gif)
 
 ## Live Demo
 
-[Soon](#/)
+[Netlify](https://management-board.netlify.app/)
 
 ## Table of Contents
 
